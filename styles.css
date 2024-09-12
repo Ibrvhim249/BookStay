@@ -1,4 +1,4 @@
-/* General reset and styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -50,7 +50,7 @@ ul {
     background-color: #007bff;
 }
 
-/* Hero Section with Video Background */
+/* Hero --- Video Background */
 .hero {
     position: relative;
     height: 100vh;
@@ -101,7 +101,7 @@ ul {
     background-color: #00509E;
 }
 
-/* Features Section */
+/* Features */
 .features-section {
     padding: 80px 5%;
     background-color: white;
@@ -143,7 +143,7 @@ ul {
     color: #00509E;
 }
 
-/* About Section */
+/* About */
 .about-section {
     padding: 80px 5%;
     background-color: #007bff;
@@ -168,7 +168,7 @@ ul {
 }
 
 .social-icon:hover {
-    color: #f0f0f0; /* Change color on hover */
+    color: #f0f0f0; 
 }
 
 /* Footer */
@@ -179,7 +179,7 @@ ul {
     padding: 20px 0;
 }
 
-/* Smooth scrolling for the entire page */
+
 html {
     scroll-behavior: smooth;
 }
