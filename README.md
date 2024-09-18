@@ -1,5 +1,6 @@
-# BookStay - Hotel Booking Website
-![Uploading image.png…]()
+# BookStay - Hotel Booking Website.
+![image](https://github.com/user-attachments/assets/3bf66466-c31b-4d8c-b384-2c2c17035138)
+
 
 
 ## Introduction
