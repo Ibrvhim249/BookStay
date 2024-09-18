@@ -1,4 +1,6 @@
 # BookStay - Hotel Booking Website
+![Uploading image.png…]()
+
 
 ## Introduction
 
@@ -9,7 +11,7 @@
 **Final Project Blog**: [Read the Project Blog](https://ibrvhim249.github.io/BookStay/)
 
 ## Author(s)
-- **[Your Name]** - [LinkedIn](www.linkedin.com/in/ibrvhim249) | [GitHub](https://github.com/Ibrvhim249)
+- **[Ibrahim Ehab]** - [LinkedIn](www.linkedin.com/in/ibrvhim249) | [GitHub](https://github.com/Ibrvhim249)
 
 ---
 
