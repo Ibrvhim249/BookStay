@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f7fc; /* Soft background color */
+    color: #333; /* Dark text for readability */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* White background for content area */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners for a modern look */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0; /* Light border below header */
+}
+
+header h1 {
+    font-size: 1.8rem; /* Header size */
+    font-weight: 600; /* Bold header */
+}
+
+.add-btn {
+    padding: 10px 20px;
+    background-color: #28a745; /* Green button color */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px; /* Rounded button corners */
+    font-size: 1rem; /* Button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.add-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove space between table cells */
+    margin-top: 20px; /* Space above the table */
+}
+
+table th, table td {
+    padding: 15px; /* Cell padding */
+    text-align: center; /* Centered text in cells */
+    border-bottom: 1px solid #f0f0f0; /* Light border for rows */
+}
+
+table th {
+    background-color: #333; /* Dark background for header */
+    color: #fff; /* White text for header */
+    text-transform: uppercase; /* Uppercase text */
+    font-weight: 600; /* Bold header text */
+}
+
+table td {
+    background-color: #fff; /* White background for cells */
+    color: #555; /* Slightly darker text for cells */
+}
+
+.status {
+    padding: 5px 10px; /* Padding for status badge */
+    border-radius: 5px; /* Rounded badge corners */
+    color: #fff; /* White text */
+    text-transform: capitalize; /* Capitalize status text */
+    font-weight: 500; /* Medium weight for status text */
+}
+
+.status.active {
+    background-color: #28a745; /* Green for active status */
+}
+
+.status.inactive {
+    background-color: #dc3545; /* Red for inactive status */
+}
+
+button {
+    border: none; /* No border for buttons */
+    background-color: transparent; /* Transparent background */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.2rem; /* Font size for icons */
+}
+
+button i {
+    padding: 10px; /* Space around icon */
+    border-radius: 5px; /* Rounded corners for icons */
+}
+
+.edit-btn i {
+    color: #007bff; /* Blue for edit icon */
+    background-color: #e2e6ea; /* Light background for icon */
+}
+
+.view-btn i {
+    color: #17a2b8; /* Teal for view icon */
+    background-color: #e2e6ea; /* Light background for icon */
+}
+
+.delete-btn i {
+    color: #dc3545; /* Red for delete icon */
+    background-color: #e2e6ea; /* Light background for icon */
+}
+
+button:hover i {
+    opacity: 0.8; /* Slight transparency on hover */
+    transition: opacity 0.3s; /* Smooth transition */
+}

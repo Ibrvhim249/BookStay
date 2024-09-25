@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStay</title>
+    <meta name="description" content="BookStay: Discover and book top-rated hotels easily.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>BookStay</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#rooms">Rooms</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#review">Reviews</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <a id="show-login" class="btn btn-primary" href="/authentication/templates/login.html">Login</a>
+                <a id="show-register" class="btn btn-outline-primary" href="/authentication/templates/register.html">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <video autoplay muted loop class="hero-video">
+                <source src="/static/images/v1.mp4" type="video/mp4">
+                <img src="/static/images/room1.jpg" alt="Fallback image showing hotel interior">
+            </video>
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h2>Discover Your Next Adventure</h2>
+                    <p>Find and book top-rated hotels easily.</p>
+                    <a href="/hotel/templates/rooms.html" class="cta-button">Book Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Check Availability Form -->
+        <section class="booking-form-container">
+            <h3>Check Booking Availability</h3>
+            <form id="availability-form" class="needs-validation" novalidate>
+                <div class="form-row">
+                    <!-- Check-in Field -->
+                    <div class="form-group">
+                        <label for="checkin" class="form-label">Check-in</label>
+                        <input type="date" id="checkin" name="checkin" class="form-control" required>
+                        <div class="invalid-feedback">Please select a check-in date.</div>
+                    </div>
+                    <!-- Check-out Field -->
+                    <div class="form-group">
+                        <label for="checkout" class="form-label">Check-out</label>
+                        <input type="date" id="checkout" name="checkout" class="form-control" required>
+                        <div class="invalid-feedback">Please select a check-out date.</div>
+                    </div>
+                    <!-- Adult Field -->
+                    <div class="form-group">
+                        <label for="adults" class="form-label">Adult</label>
+                        <select id="adults" name="adults" class="form-select" required>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                        <div class="invalid-feedback">Please select the number of adults.</div>
+                    </div>
+                    <!-- Children Field -->
+                    <div class="form-group">
+                        <label for="children" class="form-label">Children</label>
+                        <select id="children" name="children" class="form-select" required>
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <div class="invalid-feedback">Please select the number of children.</div>
+                    </div>
+                    <!-- Submit Button -->
+                    <div class="form-group text-center">
+                        <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <!-- Rooms Section -->
+        <section id="rooms" class="rooms-section">
+            <div class="container">
+                <h2>Our Rooms</h2>
+                <div class="room-grid">
+                    <div class="room-card">
+                        <img src="/static/images/room3.jpg" alt="Supreme Deluxe Room">
+                        <h3>Supreme Deluxe Room</h3>
+                        <p>90$ per night</p>
+                        <button class="book-btn">Book Now</button>
+                        <button class="details-btn">More details</button>
+                    </div>
+                    <div class="room-card">
+                        <img src="/static/images/room2.jpg" alt="Luxury Room">
+                        <h3>Luxury Room</h3>
+                        <p>60$ per night</p>
+                        <button class="book-btn">Book Now</button>
+                        <button class="details-btn">More details</button>
+                    </div>
+                    <div class="room-card">
+                        <img src="/static/images/room4.jpg" alt="Deluxe Room">
+                        <h3>Deluxe Room</h3>
+                        <p>50$ per night</p>
+                        <button class="book-btn">Book Now</button>
+                        <button class="details-btn">More details</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <h2>Key Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <h3>Flexible Booking</h3>
+                        <p>Book rooms with flexible cancellation to suit your travel plans.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-star"></i>
+                        <h3>Top-Rated Hotels</h3>
+                        <p>Explore hotels with the best customer reviews and ratings.</p>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-tag"></i>
+                        <h3>Best Price Guarantee</h3>
+                        <p>Get the best prices for your stay with no hidden fees.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section">
+            <div class="container">
+                <h2>Reviews</h2>
+                <div class="testimonials-carousel">
+                    <div class="testimonial-card">
+                        <p>“Amazing experience! The rooms were clean, and the service was excellent.”</p>
+                        <p>- Neal</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>“Loved the flexible booking option and the great price.”</p>
+                        <p>- Sanity</p>
+                        <p>⭐⭐⭐⭐</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p>“The best hotel stay I've had in years. Highly recommended!”</p>
+                        <p>- Harry</p>
+                        <p>⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <button class="know-more-btn">Know More</button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2>About BookStay</h2>
+                <p>This platform aims to offer the best hotel booking experience by providing flexible options, affordable prices, and top-rated hotels. Built as part of a full-stack web development project, it highlights modern web development skills.</p>
+                <div class="team-links">
+                    <h3>Follow Us</h3>
+                    <a href="https://linkedin.com" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal hidden">
+        <form id="login-form">
+            <h2>Login</h2>
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" required>
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" required>
+            <button type="submit">Login</button>
+            <button type="button" id="close-login">Close</button>
+        </form>
+    </div>
+
+    <!-- Register Modal -->
+    <div id="register-modal" class="modal hidden">
+        <form id="register-form">
+            <h2>Register</h2>
+            <label for="register-email">Email:</label>
+            <input type="email" id="register-email" required>
+            <label for="register-password">Password:</label>
+            <input type="password" id="register-password" required>
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" required>
+            <button type="submit">Register</button>
+            <button type="button" id="close-register">Close</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 BookStay. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/static/js/script.js"></script>
+</body>
+
+</html>
